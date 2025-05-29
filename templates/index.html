@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>modifica el titulo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <!-- Banner Superior agrega las imagenes  -->
+        <img src="{{ url_for('static', filename='banner.jpg') }}" alt="Banner principal" class="banner">
+
+    </div>
+
+    <h1>MarketPlace</h1>
+
+    <!-- Formulario para crear/editar -->
+    <div id="form-container">
+        <div class="form-group">
+            <label>Producto</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="form-group">
+            <label>Precio</label>
+            <input type="number" id="precio">
+        </div>
+        <div class="form-group">
+            <label>Descripción del Producto</label>
+            <textarea id="descripcion"></textarea>
+        </div>
+        <button onclick="guardarProducto()">Guardar</button>
+        <div id="message"></div>
+    </div>
+
+    <!-- Tabla de datos -->
+    <h2>Listado de Productos</h2>
+    <div class="productos" id="products">
+    </div>
+
+    <!-- Imagen Inferior agrega las imagenes -->
+    <img src="{{ url_for('static', filename='footer.jpg') }}" alt="Imagen inferior" class="footer">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
