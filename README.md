@@ -68,7 +68,8 @@ Abre tu navegador en: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 ## 🙋 Créditos del autor
 
 **Miguel Ángel Restrepo Saavedra**  
-Estudiante de Ingeniería de Software II  
+Estudiante de Ingeniería Informática
+Ingeniería del Software II  
 29 de mayo de 2025  
 
 Repositorio original del proyecto:  
